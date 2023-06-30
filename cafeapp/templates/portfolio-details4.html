@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Hackerton</h2>
+          <ol>
+            <li><a href="">Home</a></li>
+            <li>Portfolio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static '/img/portfolio/portfolio-4.jpg'%}" class="img-fluid" alt="">
+            <img src="{% static '/img/portfolio/portfolio-details-41.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static '/img/portfolio/portfolio-details-42.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>About Hackerton</h3>
+            <ul>
+              <li><strong>Hackerton Insitution </strong>: LIKELION, supporting by Hyundai Cradle</li>
+              <li><strong>Hackerton Topic </strong>:  Purpose-Built Vehicle (PBV)</li>
+              <li><strong>Hackton Date</strong>: January 20230</li>
+              <li><strong>Our Project URLs: </strong><a href="#">Github / </a>
+                <a href="https://docs.google.com/presentation/d/1aJ714iWseL1BU2UUQngWfV7SFndSr0pHUbL8gx68zuk/edit#slide=id.p">PPT /</a>
+                <a href="https://www.youtube.com/watch?v=1oY9gIx356Q&t=1s">Demo</a>
+              </li>
+              <li><strong>News about the Hackerton(written by Korean):</strong><a href="https://www.mk.co.kr/news/it/10626036"> Read News</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Hackerton Description</h2>
+          <p>
+            <li><strong>Team Name</strong>: HYE</li>
+            <li><strong>Project Title</strong>: B2B PBV Management</li>
+            <li><strong>Location</strong>: Hyundai Cradle, Mountain View, CA</li>
+          </p>
+          <br>
+            <p>
+              &#x2022; Our team (HYE) won 2nd place in this Hackathon.
+            </p>
+
+            <p>
+              &#x2022; Experience of participating in Hackathon organized by the club "LIKELION" where I belong.
+            </p>
+           
+            <p>
+              &#x2022; Supported by Hyundai Cradle, and participated with university students from other UCs.
+            </p>
+
+            <p>
+              &#x2022; Objective to find solutions and services that meet Kia's Purpose-Based Mobility(PBV).
+            </p>
+
+            <p>
+              &#x2022; Evaluated the feasibility and reality of the project, and the completeness of the service and solution.
+            </p>
+            
+            <p>
+              &#x2022; Presented a business to business (B2B) service that manages the functions of PVB's main customer base and proposed a solution by creating a PBV management app with the idea of PVB's unique battery attachment method.
+
+            </p>
+              
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock %}

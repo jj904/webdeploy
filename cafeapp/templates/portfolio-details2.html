@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Splitty App</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfolio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static '/img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="">
+            <img src="{% static '/img/portfolio/portfolio-details-21.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static '/img/portfolio/portfolio-details-22.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Splitty </h3>
+            <ul>
+              <li><strong>Category</strong>: desktop-based Web design</li>
+              <li><strong>Technology</strong>: JavaFx (Front-end), Java (Back-end)</li>
+              <li><strong>Project date</strong>: August 2021 - December 2021</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/jj904/Splitty-App">Github </a>
+              <a href="https://drive.google.com/drive/my-drive">Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="portfolio-description">
+          <h2> Splitty Description</h2>
+          <p>
+            <li><strong>Description</strong>: design-based Java desktop application based on the OOD (object-oriented design) concept.</li>
+          </p>
+          <p>
+            <li><strong>Technology</strong>: JavaFx (Front-end), Java (Back-end)</li>
+          </p>
+          <p>
+            <li><strong>Role of project</strong>: Lead developers</li>
+          </p>
+          <br>
+          <p>
+            &#x2022; Problem: 65% of young adults use cash apps to exchange money between friends (Mint), but there are little to no free apps for splitting bills convenientl
+          </p>
+          <p>
+            &#x2022; Splitty is a bill-splitting application aimed toward people on a budget who wish to conveniently split multiple bills at time by items and people involved.
+          </p>
+          <p>
+            &#x2022; Used design structure as MVC(Model-View-Controller)
+          </p>
+          
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock %}
